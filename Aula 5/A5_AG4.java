@@ -24,6 +24,7 @@ public class A5_AG4 {
         System.out.println("Total vendido: " + total);
         System.out.println("Média: "+media);
         System.out.println("Maior venda: "+maior);
+        //System.out.println("teste");
         teclado.close();
     }
 }
