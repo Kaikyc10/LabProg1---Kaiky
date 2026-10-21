@@ -39,6 +39,10 @@ public class Calculadora{
                 moda = numeroAtual;
             }
         }
+
+        if (frequenciaMax <=1){
+            return 00;
+        }
         return moda;
     }
 
@@ -96,6 +100,14 @@ public class Calculadora{
         Arrays.sort(numero);
 
         double p = (percentil * (numero.length +1))/100;
+
+        if(percentil <1){
+            return numero[0];
+        }
+
+        if(percentil >= numero.length){
+            return numero[numero.length -1];
+        }
 
         return numero[(int)p -1];
     }

@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class main {
@@ -24,6 +25,7 @@ public class main {
         }
 
         System.out.println("Números registrados!");
+        System.out.println(Arrays.toString(numeros));
         System.out.println();
         
 
@@ -44,6 +46,11 @@ public class main {
         System.out.print("Digite a operação desejada: ");
         int opcao = teclado.nextInt();
 
+        while(opcao!= 1 && opcao!=2 && opcao!=3 && opcao!=4 && opcao!=5 && opcao!=6 && opcao!=7 && opcao!=8){
+            System.out.print("Opção inválida, digite novamente: ");
+            opcao = teclado.nextInt();
+        }
+
         switch (opcao) {
             case 1:
                 System.out.println("A Moda é: "+ calculadora.moda(numeros));
@@ -59,6 +66,12 @@ public class main {
                 System.out.print("Digite 1 p/Q1 ou 3 p/Q3: ");
                 int q = teclado.nextInt();
 
+                while(q!= 1 && q!=3){
+                    System.out.println("Numero inválido, digite novamente.");
+                    System.out.print("Digite 1 p/Q1 ou 3 p/Q3: ");
+                    q = teclado.nextInt();
+                }
+
                 if(q == 1){
                     System.out.println("O valor de Q1 é: " + calculadora.q1(numeros));
                 }else{
@@ -70,6 +83,11 @@ public class main {
             case 5:
                 System.out.print("Qual o percentil desejado? : ");
                 int p = teclado.nextInt();
+
+                while(p<0 || p>100){
+                    System.out.print("Valor inválido. Digite novamente: ");
+                    p = teclado.nextInt();
+                }
 
                 System.out.println("O valor é: " + calculadora.percentil(p, numeros));
                 break;
