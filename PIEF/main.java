@@ -98,7 +98,14 @@ public class main {
                 System.out.println("O Desvio-Padrão é: "+ calculadora.desvioPadrao(calculadora.variancia(numeros)));
                 break;
             case 8:
+                System.out.println();
+                System.out.println("================================================");
                 System.out.println("Obrigado por usar a Calculadora Estatística!");
+                System.out.println("================================================");
+                System.out.println("Este projeto foi feito por:");
+                System.out.println();
+                System.out.println("Álvaro Eugenio - 202610002");
+                System.out.println("Kaiky Tereza - 202610079");
                 continuar = false;
                 break;
             default:
