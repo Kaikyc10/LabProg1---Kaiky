@@ -1,3 +1,4 @@
+/* 
 import java.util.Random;
 import java.util.Scanner;
 
@@ -141,3 +142,4 @@ public class A8_AT2_JogoDaVelha {
         
     }
 }
+    */
